@@ -80,6 +80,15 @@ class CommonView : SurfaceView, Runnable {
     }
 
 
+    fun ptOn(x:Int,y:Int){
+        screenBuffer[y*128+x]=true
+    }
+
+    fun ptOff(x:Int,y:Int){
+        screenBuffer[y*128+x]=false
+    }
+
+
     override fun run() {
         while (true) {
             sleep(10)
@@ -113,7 +122,7 @@ class CommonView : SurfaceView, Runnable {
 
 
     fun startGame(){
-        Timer().schedule(chipRun(),Date(),30)
+        Timer().schedule(chipRun(), Date(),30)
     }
 
 
