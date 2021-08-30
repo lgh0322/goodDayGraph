@@ -7,7 +7,8 @@
     android:background="#f0fafa"
     tools:context=".MainActivity">
 
-    <com.vaca.chip8.view.Chip8View
+    <com.vaca.chip8.view.CommonView
+        android:id="@+id/fuck"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="1080dp"

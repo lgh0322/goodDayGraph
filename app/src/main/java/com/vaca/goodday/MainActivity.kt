@@ -35,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             vibrator.vibrate(100)
 
         }
+
+
+        binding.fuck.resume()
+        binding.fuck.startGame()
     }
 }

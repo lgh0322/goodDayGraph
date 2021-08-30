@@ -13,7 +13,7 @@ import java.lang.Thread.sleep
 import java.util.*
 
 
-class Chip8View : SurfaceView, Runnable {
+class CommonView : SurfaceView, Runnable {
     private val wavePaint = Paint()
     private val bgPaint = Paint()
 
@@ -107,16 +107,18 @@ class Chip8View : SurfaceView, Runnable {
 
     inner class chipRun : TimerTask() {
         override fun run() {
-
-
+            canUpdate=true
         }
+    }
 
+
+    fun startGame(){
+        Timer().schedule(chipRun(),Date(),30)
     }
 
 
     fun resume() {
         val thread = Thread(this)
         thread.start()
-
     }
 }
