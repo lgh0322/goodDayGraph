@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f0fafa"
     tools:context=".MainActivity">
 
     <com.vaca.chip8.view.Chip8View
@@ -12,4 +13,60 @@
         android:layout_width="1080dp"
         android:layout_height="1080dp"/>
 
+    <TextView
+        android:id="@+id/up"
+        android:text="UP"
+        android:background="@color/Blue"
+        android:textSize="80sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/left"
+        android:text="LF"
+        android:background="@color/Blue"
+        android:textSize="80sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/down"
+        android:text="DN"
+        android:background="@color/Blue"
+        android:textSize="80sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1600dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/right"
+        android:text="RT"
+        android:background="@color/Blue"
+        android:textSize="80sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1600dp"
+       android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
